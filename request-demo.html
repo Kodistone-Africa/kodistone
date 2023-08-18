@@ -143,53 +143,7 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
-        <script>
-            var thisform = document.getElementById("subscription_form");
-
-            const headers_ = {
-                'Authorization': 'Bearer keyXKQV5un7HrZTbW',
-                'Content-Type': 'application/json'
-            };
-
-            // When the form is submitted...
-            thisform.addEventListener("submit", function(event) {
-                document.getElementById('button_submit').style.display = 'none';
-                document.getElementById('first_loader').style.display = 'block';
-                var checkboxes = document.getElementsByName('modules');
-                // check all submitted modules
-                var modules = " ";
-                for (var i=0, n=checkboxes.length;i<n;i++) 
-                {
-                    if (checkboxes[i].checked) 
-                    {
-                        modules += checkboxes[i].value+", ";
-                    }
-                }
-                if (modules) modules = modules.substring(1);
-
-                event.preventDefault();
-
-                // POST the data
-                axios.post("https://api.airtable.com/v0/appolPw2eM5Aeo1MB/Demo%20Request",
-                    {
-                        "fields": {
-                            "Name": document.getElementById("Name").value,
-                            "Email Address": document.getElementById("EmailAddress").value,
-                            "Company": document.getElementById("Company").value,
-                            "Phone Number": document.getElementById("PhoneNumber").value,
-                            "Title": document.getElementById("Title").value,
-                            "Modules": modules,
-                        }
-                    }, {headers: headers_}
-                )
-                .then((resp) => {
-                    window.location.href = 'request-submitted-successfully.html';
-                }).catch(function (error) {
-                    document.getElementById('subscription_form').style.display = 'none';
-                    document.getElementById('not_submitted').style.display = 'block';
-                })});
-            
-        </script>
+        
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
