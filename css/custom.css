@@ -54,8 +54,8 @@
 }
 
 .hero_header{
-    font-weight: 400;
-    color:#413C85;
+    font-weight: 600;
+    color:#1F1B5B;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
@@ -85,7 +85,7 @@
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 3rem;
-    color: #413C85;
+    color: #1F1B5B;
 }
 
 /* The typing effect */
@@ -113,7 +113,7 @@
 
 .section_header{
     font-weight: 400;
-    color:#413C85
+    color:#1F1B5B
 }
 
 .develop_text{
@@ -254,8 +254,8 @@
         text-align: center;
     }
     .hero_header{
-        font-weight: 400;
-        color:#1208AA;
+        font-weight: 800;
+        color:#1F1B5B;
         font-size: 34px;
         white-space: nowrap;
         overflow: hidden;
@@ -292,10 +292,10 @@
 }
 
 .blog_link{
-    color:#D85D38
+    color:#EA6941
 }
 
 .blog_category{
-    color:#D85D38;
+    color:#EA6941;
     font-size: 14px;
 }
