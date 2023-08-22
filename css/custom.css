@@ -264,7 +264,7 @@
         font-weight: 800;
         color:#1F1B5B;
         font-size: 34px;
-        white-space: nowrap;
+        white-space: collapse;
         /* overflow: hidden; */
         width: 100%;
         /* animation: typing 3.1s steps(60, end); */
