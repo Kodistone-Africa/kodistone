@@ -19,7 +19,7 @@
         <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>Kodistone: Request demo</title>
+        <title>Kodistone: Success Demo</title>
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -74,22 +74,11 @@
             <div class="container">
                 <div class="row row_card">
                     <div class="col-lg-12 demo_card">
-                        <h1 class="subscribe header_text" id="header_msg">Kodistone Demo Request</h1>
+                        <h1 class="subscribe header_text" id="header_msg">Thank you for signing up to Kodistone</h1>
                         <p id="header_paragraph" class="header_p">
-                            Please give us a few more details about you and we will quickly schedule a demo</p>
-                        <form id="subscription_form">
-                            <input placeholder="Full Name" id="Name" name="Name" required>
-                            <input placeholder="What is your current role? e.g. agent, landlord" id="Role" name="Role" required><br/>
-                            <input placeholder="How many units do you currently manage?" id="Units" name="Units" required><br/>
-                            <input placeholder="Your Work Email Address" id="EmailAddress" name="EmailAddress" required>
-                            <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
-                            <button class="btn-outline-lg page-scroll"  type="submit">
-                                <span id="button_submit">Submit</span>
-                                <div id="first_loader" class="first-loader"></div>
-                            </button>
-                            
-                        </form>
-                        
+                            We will reach out to you within 24 hours to give you a detailed walkthrough of the platform. 
+                            We are looking to helping you unlock your property's potential, while enhancing tenant experience.
+                        </p>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -165,11 +154,10 @@
             }, {headers: headers_}
             )
             .then((resp) => {
-                console.log("success!")
-                window.location.href = "/success-demo.html"
+            console.log("success!")
             })
             .catch(function (error) {
-                console.log(error);
+            console.log(error);
             });
             });
         </script>
