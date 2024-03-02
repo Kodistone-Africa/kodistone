@@ -83,11 +83,10 @@
                             <input placeholder="How many units do you currently manage?" id="Units" name="Units" required><br/>
                             <input placeholder="Your Work Email Address" id="EmailAddress" name="EmailAddress" required>
                             <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
-                            <button class="btn-outline-lg page-scroll"  type="submit">
+                            <button class="btn-outline-lg page-scroll" type="submit">
                                 <span id="button_submit">Submit</span>
-                                <div id="first_loader" class="first-loader"></div>
+                                <div id="first_loader" class="loader"></div>
                             </button>
-                            
                         </form>
                         
                     </div> <!-- end of col -->
@@ -151,7 +150,9 @@
             };
             // When the form is submitted...
             thisForm.addEventListener("submit", function(event) {
-            event.preventDefault();
+                document.getElementById('button_submit').style.display = 'none';
+			    document.getElementById('first_loader').style.display = 'block';
+                event.preventDefault();
             // POST the data
             axios.post("https://api.airtable.com/v0/appcJ7idWEp8HTtA7/Demo%20Requests",
             {
